@@ -1,0 +1,8 @@
+enableBook = true
+unlockAll = false
+enableBounce = true
+showAlternativesOnHover = true
+
+[scrollingModule]
+enableScrolling = true
+scrollAround = false

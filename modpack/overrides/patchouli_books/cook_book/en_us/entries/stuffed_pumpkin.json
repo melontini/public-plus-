@@ -1,0 +1,21 @@
+{
+    "name": "Stuffed Pumpkin",
+    "icon": "farmersdelight:stuffed_pumpkin_block",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:stuffed_pumpkin_block":0},
+    "advancement": "plus:recipes/cooking_pot/stuffed_pumpkin",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Stuffed Pumpkin",
+            "ing0": "tag:fabric:crops/rice",
+            "ing1": "tag:fabric:vegetables",
+            "ing2": "farmersdelight:tomato_sauce",
+            "ing3": "minecraft:baked_potato",
+            "ing4": "farmersdelight:brown_mushroom_colony",
+            "ing5": "minecraft:sweet_berries",
+            "result": "farmersdelight:stuffed_pumpkin_block",
+            "container": "minecraft:pumpkin"
+        }
+    ]
+}

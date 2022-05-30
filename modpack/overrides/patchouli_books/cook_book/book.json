@@ -1,0 +1,10 @@
+{
+    "name": "plus.book.cook_book.name",
+    "landing_text": "plus.book.cook_book.landind_text",
+    "version": 1,
+    "model": "patchouli:book_blue",
+    "use_blocky_font": true,
+    "pause_game": true,
+    "show_progress": false,
+    "book_texture": "patchouli:textures/gui/book_blue.png"
+}

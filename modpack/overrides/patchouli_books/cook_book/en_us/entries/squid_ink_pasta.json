@@ -1,0 +1,19 @@
+{
+    "name": "Squid Ink Pasta",
+    "icon": "farmersdelight:squid_ink_pasta",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:squid_ink_pasta":0},
+    "advancement": "plus:recipes/cooking_pot/squid_ink_pasta",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Squid Ink Pasta",
+            "ing0": "tag:fabric:raw_fishes",
+            "ing1": "tag:fabric:pasta",
+            "ing2": "tag:fabric:crops/tomato",
+            "ing3": "minecraft:ink_sac",
+            "result": "farmersdelight:squid_ink_pasta",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

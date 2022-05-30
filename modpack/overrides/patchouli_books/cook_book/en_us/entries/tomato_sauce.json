@@ -1,0 +1,17 @@
+{
+    "name": "Tomato Sauce",
+    "icon": "farmersdelight:tomato_sauce",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:tomato_sauce":0},
+    "advancement": "plus:recipes/cooking_pot/tomato_sauce",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Tomato Sauce",
+            "ing0": "tag:fabric:crops/tomato",
+            "ing1": "tag:fabric:crops/tomato",
+            "result": "farmersdelight:tomato_sauce",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

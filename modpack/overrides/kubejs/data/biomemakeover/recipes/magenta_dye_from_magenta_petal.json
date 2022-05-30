@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "magenta_dye",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "biomemakeover:magenta_petals"
+    }
+  },
+  "result": {
+    "item": "minecraft:magenta_dye",
+    "count": 1
+  }
+}

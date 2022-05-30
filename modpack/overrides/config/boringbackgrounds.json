@@ -1,0 +1,11 @@
+{
+    "textures": {
+        "biomemakeover:textures/block/yellow_terracotta_brick.png": 5,
+        "cinderscapes:textures/block/smooth_rose_quartz.png": 5,
+        "farmersdelight:textures/block/rich_soil.png": 4,
+        "terrestria:textures/block/rainbow_eucalyptus_log.png": 1,
+        "gofish:textures/block/golden_crate.png": 2,
+        "blockus:textures/block/marble.png": 4
+    },
+        "randomize_on_new_screen": false
+}

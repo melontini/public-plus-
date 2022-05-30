@@ -1,0 +1,17 @@
+{
+    "name": "Mushroom Stew",
+    "icon": "minecraft:mushroom_stew",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"minecraft:mushroom_stew":0},
+    "advancement": "plus:recipes/cooking_pot/mushroom_stew",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Mushroom Stew",
+            "ing0": "minecraft:brown_mushroom",
+            "ing1": "minecraft:red_mushroom",
+            "result": "minecraft:mushroom_stew",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_everlasting_beef": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "artifacts:everlasting_beef"
+                    }
+                ]
+            }
+        },
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "artifacts:eternal_steak_smoker"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_everlasting_beef",
+            "has_the_recipe"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "artifacts:eternal_steak_smoker"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Endfish n' Chorus",
+    "icon": "gofish:endfish_and_chorus",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"gofish:endfish_and_chorus":0},
+    "advancement": "plus:recipes/cooking_pot/endfish_and_chorus",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Endfish n' Chorus",
+            "ing0": "gofish:baked_endfish",
+            "ing1": "minecraft:chorus_fruit",
+            "ing2": "minecraft:chorus_fruit",
+            "result": "gofish:endfish_and_chorus",
+            "container": "gofish:endfish_and_chorus"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Cooked Rice",
+    "icon": "farmersdelight:cooked_rice",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:cooked_rice":0},
+    "advancement": "plus:recipes/cooking_pot/cooked_rice",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Cooked Rice",
+            "ing0": "farmersdelight:rice",
+            "result": "farmersdelight:cooked_rice",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

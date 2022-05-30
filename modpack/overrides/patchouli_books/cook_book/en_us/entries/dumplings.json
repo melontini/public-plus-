@@ -1,0 +1,19 @@
+{
+    "name": "Dumplings",
+    "icon": "farmersdelight:dumplings",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:dumplings":0},
+    "advancement": "plus:recipes/cooking_pot/dumplings",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Dumplings",
+            "ing0": "tag:fabric:pasta",
+            "ing1": "tag:fabric:crops/cabbage",
+            "ing2": "tag:fabric:crops/onion",
+            "ing3": "tag:fabric:raw_chicken,minecraft:brown_mushroom,tag:fabric:raw_pork,tag:fabric:raw_beef",
+            "result": "farmersdelight:dumplings#2",
+            "container": "farmersdelight:dumplings#2"
+        }
+    ]
+}

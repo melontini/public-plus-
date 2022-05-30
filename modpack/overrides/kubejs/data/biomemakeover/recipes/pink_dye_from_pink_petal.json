@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pink_dye",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "biomemakeover:pink_petals"
+    }
+  },
+  "result": {
+    "item": "minecraft:pink_dye",
+    "count": 1
+  }
+}

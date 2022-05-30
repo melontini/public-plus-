@@ -1,0 +1,19 @@
+{
+    "name": "Dog Food",
+    "icon": "farmersdelight:dog_food",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:dog_food":0},
+    "advancement": "plus:recipes/cooking_pot/dog_food",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Dog Food",
+            "ing0": "minecraft:rotten_flesh",
+            "ing1": "minecraft:bone_meal",
+            "ing2": "tag:farmersdelight:wolf_prey",
+            "ing3": "tag:fabric:crops/rice",
+            "result": "farmersdelight:dog_food",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

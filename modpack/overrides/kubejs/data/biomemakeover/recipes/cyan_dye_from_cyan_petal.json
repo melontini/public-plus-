@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cyan_dye",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "biomemakeover:cyan_petals"
+    }
+  },
+  "result": {
+    "item": "minecraft:cyan_dye",
+    "count": 1
+  }
+}

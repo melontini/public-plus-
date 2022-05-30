@@ -1,0 +1,884 @@
+{
+  "minecraft": {
+    "version": "1.16.5",
+    "modLoaders": [
+      {
+        "id": "fabric-0.14.3",
+        "primary": true
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "overrides": "overrides",
+  "manifestVersion": 1,
+  "version": "0.1.0",
+  "author": "melontini",
+  "name": "Plus-",
+  "files": [
+    {
+      "projectID": 60089,
+      "fileID": 3603191,
+      "required": true,
+      "__meta": {
+        "name": "Mouse Tweaks"
+      }
+    },
+    {
+      "projectID": 306612,
+      "fileID": 3516413,
+      "required": true,
+      "__meta": {
+        "name": "Fabric API",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 308702,
+      "fileID": 3479748,
+      "required": true,
+      "__meta": {
+        "name": "Mod Menu",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 308769,
+      "fileID": 3531998,
+      "required": true,
+      "__meta": {
+        "name": "Fabric Language Kotlin",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 308777,
+      "fileID": 3397865,
+      "required": true,
+      "__meta": {
+        "name": "Traverse",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 312289,
+      "fileID": 3464343,
+      "required": true,
+      "__meta": {
+        "name": "Blockus",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 323974,
+      "fileID": 3193392,
+      "required": true,
+      "__meta": {
+        "name": "Terrestria"
+      }
+    },
+    {
+      "projectID": 325378,
+      "fileID": 3188140,
+      "required": true,
+      "__meta": {
+        "name": "Wild World",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 325861,
+      "fileID": 2963760,
+      "required": true,
+      "__meta": {
+        "name": "Smooth Scrolling Everywhere (Fabric)"
+      }
+    },
+    {
+      "projectID": 334018,
+      "fileID": 3029797,
+      "required": true,
+      "__meta": {
+        "name": "Trap Expansion  (Fabric)",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 334259,
+      "fileID": 3153246,
+      "required": true,
+      "__meta": {
+        "name": "Presence Footsteps [Fabric]"
+      }
+    },
+    {
+      "projectID": 335493,
+      "fileID": 3302730,
+      "required": true,
+      "__meta": {
+        "name": "Dynamic FPS",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 341284,
+      "fileID": 3100959,
+      "required": true,
+      "__meta": {
+        "name": "Trinkets (Fabric)",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 347449,
+      "fileID": 3205719,
+      "required": true,
+      "__meta": {
+        "name": "Modifiers"
+      }
+    },
+    {
+      "projectID": 348521,
+      "fileID": 3782783,
+      "required": true,
+      "__meta": {
+        "name": "Cloth Config API (Fabric/Forge)",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 349938,
+      "fileID": 3247975,
+      "required": true,
+      "__meta": {
+        "name": "BLAST 💣",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 353890,
+      "fileID": 3606846,
+      "required": true,
+      "__meta": {
+        "name": "Not Enough Crashes (Fabric)"
+      }
+    },
+    {
+      "projectID": 355583,
+      "fileID": 3032313,
+      "required": true,
+      "__meta": {
+        "name": "Advancements Enlarger",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 356118,
+      "fileID": 3040466,
+      "required": true,
+      "__meta": {
+        "name": "Flonters",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 360438,
+      "fileID": 3344974,
+      "required": true,
+      "__meta": {
+        "name": "Lithium (Fabric)"
+      }
+    },
+    {
+      "projectID": 361550,
+      "fileID": 3119667,
+      "required": true,
+      "__meta": {
+        "name": "No Potion Offset (Fabric/Forge)"
+      }
+    },
+    {
+      "projectID": 362669,
+      "fileID": 3209365,
+      "required": true,
+      "__meta": {
+        "name": "Quick Shulker"
+      }
+    },
+    {
+      "projectID": 363126,
+      "fileID": 3063862,
+      "required": true,
+      "__meta": {
+        "name": "Boring Backgrounds",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 363707,
+      "fileID": 3103126,
+      "required": true,
+      "__meta": {
+        "name": "Lakeside",
+        "dependencies": [
+          308769,
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 365521,
+      "fileID": 3153778,
+      "required": true,
+      "__meta": {
+        "name": "Pling"
+      }
+    },
+    {
+      "projectID": 371307,
+      "fileID": 3186845,
+      "required": true,
+      "__meta": {
+        "name": "Cave Biomes"
+      }
+    },
+    {
+      "projectID": 372124,
+      "fileID": 3537800,
+      "required": true,
+      "__meta": {
+        "name": "Phosphor (Fabric)"
+      }
+    },
+    {
+      "projectID": 373591,
+      "fileID": 3344725,
+      "required": true,
+      "__meta": {
+        "name": "YUNG's Better Mineshafts (Fabric)",
+        "dependencies": [
+          421649,
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 377281,
+      "fileID": 3580053,
+      "required": true,
+      "__meta": {
+        "name": "Dark Paintings"
+      }
+    },
+    {
+      "projectID": 380548,
+      "fileID": 3186878,
+      "required": true,
+      "__meta": {
+        "name": "River Redux",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 391429,
+      "fileID": 3424696,
+      "required": true,
+      "__meta": {
+        "name": "Cinderscapes",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 391916,
+      "fileID": 3533711,
+      "required": true,
+      "__meta": {
+        "name": "Powershot",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 392805,
+      "fileID": 2994761,
+      "required": true,
+      "__meta": {
+        "name": "CleanCut"
+      }
+    },
+    {
+      "projectID": 393236,
+      "fileID": 3362798,
+      "required": true,
+      "__meta": {
+        "name": "Patchouli (Fabric)"
+      }
+    },
+    {
+      "projectID": 393442,
+      "fileID": 3172563,
+      "required": true,
+      "__meta": {
+        "name": "LambDynamicLights",
+        "dependencies": [
+          308702,
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 394468,
+      "fileID": 3488820,
+      "required": true,
+      "__meta": {
+        "name": "Sodium",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 394941,
+      "fileID": 3233941,
+      "required": true,
+      "__meta": {
+        "name": "Curios API (Fabric)",
+        "explicit": false,
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 395864,
+      "fileID": 3647097,
+      "required": true,
+      "__meta": {
+        "name": "KubeJS (Old)",
+        "dependencies": [
+          306612,
+          419697,
+          416294
+        ]
+      }
+    },
+    {
+      "projectID": 398523,
+      "fileID": 3170825,
+      "required": true,
+      "__meta": {
+        "name": "Anvil Crushing Recipes",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 398752,
+      "fileID": 3392520,
+      "required": true,
+      "__meta": {
+        "name": "Compact Status Effects",
+        "dependencies": [
+          319057,
+          308769
+        ]
+      }
+    },
+    {
+      "projectID": 398780,
+      "fileID": 3373514,
+      "required": true,
+      "__meta": {
+        "name": "Library of Exile",
+        "explicit": false,
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 398782,
+      "fileID": 3376667,
+      "required": true,
+      "__meta": {
+        "name": "Anti Mob Farm",
+        "dependencies": [
+          398780,
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 399798,
+      "fileID": 3573933,
+      "required": true,
+      "__meta": {
+        "name": "Item Model Fix (Fabric)"
+      }
+    },
+    {
+      "projectID": 400131,
+      "fileID": 3211257,
+      "required": true,
+      "__meta": {
+        "name": "Music Duration Reducer"
+      }
+    },
+    {
+      "projectID": 401236,
+      "fileID": 3570021,
+      "required": true,
+      "__meta": {
+        "name": "Artifacts (Fabric)",
+        "dependencies": [
+          341284,
+          306612,
+          319057
+        ]
+      }
+    },
+    {
+      "projectID": 401556,
+      "fileID": 3149112,
+      "required": true,
+      "__meta": {
+        "name": "Overworld Two"
+      }
+    },
+    {
+      "projectID": 401978,
+      "fileID": 3545078,
+      "required": true,
+      "__meta": {
+        "name": "[FABRIC] Disable Custom Worlds Advice"
+      }
+    },
+    {
+      "projectID": 408366,
+      "fileID": 3269549,
+      "required": true,
+      "__meta": {
+        "name": "SlotLock",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 408465,
+      "fileID": 3307522,
+      "required": true,
+      "__meta": {
+        "name": "YUNG's Better Caves (Fabric)",
+        "dependencies": [
+          421649
+        ]
+      }
+    },
+    {
+      "projectID": 411557,
+      "fileID": 3087328,
+      "required": true,
+      "__meta": {
+        "name": "ToolTipFix"
+      }
+    },
+    {
+      "projectID": 412182,
+      "fileID": 3294341,
+      "required": true,
+      "__meta": {
+        "name": "Biome Makeover",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 412225,
+      "fileID": 3304577,
+      "required": true,
+      "__meta": {
+        "name": "Harvest Scythes"
+      }
+    },
+    {
+      "projectID": 414445,
+      "fileID": 3508011,
+      "required": true,
+      "__meta": {
+        "name": "Fabrication"
+      }
+    },
+    {
+      "projectID": 416294,
+      "fileID": 3525703,
+      "required": true,
+      "__meta": {
+        "name": "Rhino",
+        "explicit": false,
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 417003,
+      "fileID": 3144811,
+      "required": true,
+      "__meta": {
+        "name": "Phonos",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 417510,
+      "fileID": 3289593,
+      "required": true,
+      "__meta": {
+        "name": "Falling Leaves (Fabric)",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 419697,
+      "fileID": 3764586,
+      "required": true,
+      "__meta": {
+        "name": "Architectury API (Fabric)",
+        "explicit": false,
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 421649,
+      "fileID": 3432140,
+      "required": true,
+      "__meta": {
+        "name": "YUNG's API (Fabric)",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 421897,
+      "fileID": 3420025,
+      "required": true,
+      "__meta": {
+        "name": "Particle Rain",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 422316,
+      "fileID": 3345570,
+      "required": true,
+      "__meta": {
+        "name": "Advancements Debug"
+      }
+    },
+    {
+      "projectID": 429926,
+      "fileID": 3285060,
+      "required": true,
+      "__meta": {
+        "name": "Seamless Loading Screen",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 430610,
+      "fileID": 3206471,
+      "required": true,
+      "__meta": {
+        "name": "StitchedSnow"
+      }
+    },
+    {
+      "projectID": 431135,
+      "fileID": 3323935,
+      "required": true,
+      "__meta": {
+        "name": "Go Fish"
+      }
+    },
+    {
+      "projectID": 433518,
+      "fileID": 3209972,
+      "required": true,
+      "__meta": {
+        "name": "LazyDFU"
+      }
+    },
+    {
+      "projectID": 436659,
+      "fileID": 3169488,
+      "required": true,
+      "__meta": {
+        "name": "Cosmetic Armor [FABRIC]",
+        "dependencies": [
+          306612,
+          394941
+        ]
+      }
+    },
+    {
+      "projectID": 440283,
+      "fileID": 3415278,
+      "required": true,
+      "__meta": {
+        "name": "KubeJS UI (Old)",
+        "dependencies": [
+          419697,
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 442184,
+      "fileID": 3188519,
+      "required": true,
+      "__meta": {
+        "name": "Save My Stronghold! (Fabric)"
+      }
+    },
+    {
+      "projectID": 442682,
+      "fileID": 3191605,
+      "required": true,
+      "__meta": {
+        "name": "Make Every Biome Spawnable Lol",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 443142,
+      "fileID": 3196885,
+      "required": true,
+      "__meta": {
+        "name": "Carpet-Mod without /player"
+      }
+    },
+    {
+      "projectID": 448832,
+      "fileID": 3378632,
+      "required": true,
+      "__meta": {
+        "name": "So I heard you were talking crap about Minecraft's combat?"
+      }
+    },
+    {
+      "projectID": 452046,
+      "fileID": 3378154,
+      "required": true,
+      "__meta": {
+        "name": "Enhanced Block Entities",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 455508,
+      "fileID": 3770302,
+      "required": true,
+      "__meta": {
+        "name": "Iris Shaders",
+        "dependencies": [
+          394468
+        ]
+      }
+    },
+    {
+      "projectID": 459496,
+      "fileID": 3484850,
+      "required": true,
+      "__meta": {
+        "name": "Indium",
+        "dependencies": [
+          394468
+        ]
+      }
+    },
+    {
+      "projectID": 460714,
+      "fileID": 3248205,
+      "required": true,
+      "__meta": {
+        "name": "Candle Backport (Fabric)",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 482834,
+      "fileID": 3531863,
+      "required": true,
+      "__meta": {
+        "name": "Farmer's Delight [Fabric]",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 486080,
+      "fileID": 3338426,
+      "required": true,
+      "__meta": {
+        "name": "More Villagers [Fabric]"
+      }
+    },
+    {
+      "projectID": 486485,
+      "fileID": 3327936,
+      "required": true,
+      "__meta": {
+        "name": "Better Recipe Books (+ Brewing Stands)"
+      }
+    },
+    {
+      "projectID": 491943,
+      "fileID": 3343804,
+      "required": true,
+      "__meta": {
+        "name": "Fruitful (Please Go to Original/Forge Page For Updates)",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 499571,
+      "fileID": 3372142,
+      "required": true,
+      "__meta": {
+        "name": "Chunk Saving Fix"
+      }
+    },
+    {
+      "projectID": 499731,
+      "fileID": 3373933,
+      "required": true,
+      "__meta": {
+        "name": "Snow Under Trees (Fabric)",
+        "dependencies": [
+          306612,
+          319057
+        ]
+      }
+    },
+    {
+      "projectID": 509575,
+      "fileID": 3586189,
+      "required": true,
+      "__meta": {
+        "name": "Observable",
+        "dependencies": [
+          308769,
+          419697
+        ]
+      }
+    },
+    {
+      "projectID": 526606,
+      "fileID": 3704027,
+      "required": true,
+      "__meta": {
+        "name": "Collective (Fabric)",
+        "explicit": false,
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
+      "projectID": 530031,
+      "fileID": 3467074,
+      "required": true,
+      "__meta": {
+        "name": "Healing Campfire (Fabric)",
+        "dependencies": [
+          306612,
+          526606
+        ]
+      }
+    },
+    {
+      "projectID": 622736,
+      "fileID": 3793587,
+      "required": true,
+      "__meta": {
+        "name": "Linkart (Super Mega Fix Edition)",
+        "dependencies": [
+          306612,
+          348521
+        ]
+      }
+    },
+    {
+      "projectID": 622984,
+      "fileID": 3788867,
+      "required": true,
+      "__meta": {
+        "name": "Minecart Booster",
+        "dependencies": [
+          348521
+        ]
+      }
+    },
+    {
+      "projectID": 628779,
+      "fileID": 3810215,
+      "required": true,
+      "__meta": {
+        "name": "Plus- tweaker"
+      }
+    },
+    {
+      "projectID": 629060,
+      "fileID": 3810178,
+      "required": true,
+      "__meta": {
+        "name": "BM Cosmetic Hats Fix",
+        "dependencies": [
+          412182,
+          436659
+        ]
+      }
+    }
+  ]
+}

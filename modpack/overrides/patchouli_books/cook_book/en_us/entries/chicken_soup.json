@@ -1,0 +1,19 @@
+{
+    "name": "Chicken Soup",
+    "icon": "farmersdelight:chicken_soup",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:chicken_soup":0},
+    "advancement": "plus:recipes/cooking_pot/chicken_soup",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Chicken Soup",
+            "ing0": "tag:fabric:raw_chicken",
+            "ing1": "minecraft:carrot",
+            "ing2": "tag:fabric:salad_ingredients",
+            "ing3": "tag:fabric:vegetables",
+            "result": "farmersdelight:chicken_soup",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "biomemakeover:swamp_cypress_planks"
+    }
+  },
+  "result": {
+    "item": "biomemakeover:swamp_cypress_boat",
+    "count": 1
+  }
+}

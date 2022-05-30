@@ -1,0 +1,19 @@
+{
+    "name": "Fried Rice",
+    "icon": "farmersdelight:fried_rice",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:fried_rice":0},
+    "advancement": "plus:recipes/cooking_pot/fried_rice",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Fried Rice",
+            "ing0": "tag:fabric:crops/rice",
+            "ing1": "tag:fabric:eggs",
+            "ing2": "minecraft:carrot",
+            "ing3": "tag:fabric:crops/onion",
+            "result": "farmersdelight:fried_rice",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

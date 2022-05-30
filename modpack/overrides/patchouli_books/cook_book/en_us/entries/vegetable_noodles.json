@@ -1,0 +1,20 @@
+{
+    "name": "Vegetable Noodles",
+    "icon": "farmersdelight:vegetable_noodles",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:vegetable_noodles":0},
+    "advancement": "plus:recipes/cooking_pot/vegetable_noodles",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Vegetable Noodles",
+            "ing0": "minecraft:carrot",
+            "ing1": "minecraft:brown_mushroom",
+            "ing2": "tag:fabric:pasta",
+            "ing3": "tag:fabric:salad_ingredients",
+            "ing4": "tag:fabric:vegetables",
+            "result": "farmersdelight:vegetable_noodles",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

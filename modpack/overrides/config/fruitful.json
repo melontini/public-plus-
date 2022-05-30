@@ -1,0 +1,8 @@
+{
+  "flowerBiomes": [
+    "traverse:rolling_hills",
+    "minecraft:flower_forest",
+    "minecraft:forest",
+    "minecraft:wooded_hills"
+  ]
+}

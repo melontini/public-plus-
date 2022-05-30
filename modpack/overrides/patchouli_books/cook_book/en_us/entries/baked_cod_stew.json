@@ -1,0 +1,19 @@
+{
+    "name": "Baked Cod Stew",
+    "icon": "farmersdelight:baked_cod_stew",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:baked_cod_stew":0},
+    "advancement": "plus:recipes/cooking_pot/cod_stew",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Baked Cod Stew",
+            "ing0": "minecraft:cod,farmersdelight:cod_slice",
+            "ing1": "minecraft:potato",
+            "ing2": "minecraft:egg",
+            "ing3": "farmersdelight:tomato",
+            "result": "farmersdelight:baked_cod_stew",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

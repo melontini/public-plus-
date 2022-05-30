@@ -1,0 +1,18 @@
+{
+    "name": "Pasta with Chops",
+    "icon": "farmersdelight:pasta_with_mutton_chop",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:pasta_with_mutton_chop":0},
+    "advancement": "plus:recipes/cooking_pot/pasta_with_mutton_chop",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Pasta with Mutton Chop",
+            "ing0": "tag:fabric:raw_mutton",
+            "ing1": "tag:fabric:pasta",
+            "ing2": "farmersdelight:tomato_sauce",
+            "result": "farmersdelight:pasta_with_mutton_chop",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

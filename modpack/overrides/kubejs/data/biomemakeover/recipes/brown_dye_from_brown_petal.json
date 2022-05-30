@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "brown_dye",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "biomemakeover:brown_petals"
+    }
+  },
+  "result": {
+    "item": "minecraft:brown_dye",
+    "count": 1
+  }
+}

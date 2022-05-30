@@ -1,0 +1,19 @@
+{
+    "name": "Grilled Blackstone",
+    "icon": "gofish:grilled_blackstone_deluxe",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"gofish:grilled_blackstone_deluxe":0},
+    "advancement": "plus:recipes/cooking_pot/grilled_blackstone_deluxe",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Grilled Blackstone Deluxe",
+            "ing0": "gofish:grilled_blackstone_trout",
+            "ing1": "gofish:baked_seaweed",
+            "ing2": "minecraft:baked_potato",
+            "ing3": "minecraft:baked_potato",
+            "result": "gofish:grilled_blackstone_deluxe",
+            "container": "gofish:grilled_blackstone_deluxe"
+        }
+    ]
+}

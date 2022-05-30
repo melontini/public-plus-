@@ -1,0 +1,19 @@
+{
+    "name": "Rabbit Stew",
+    "icon": "minecraft:rabbit_stew",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"minecraft:rabbit_stew":0},
+    "advancement": "plus:recipes/cooking_pot/rabbit_stew",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Rabbit Stew",
+            "ing0": "minecraft:baked_potato",
+            "ing1": "minecraft:rabbit,minecraft:cooked_rabbit",
+            "ing2": "minecraft:carrot",
+            "ing3": "minecraft:brown_mushroom,minecraft:red_mushroom",
+            "result": "minecraft:rabbit_stew",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

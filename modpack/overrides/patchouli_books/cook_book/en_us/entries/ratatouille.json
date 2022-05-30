@@ -1,0 +1,19 @@
+{
+    "name": "Ratatouille",
+    "icon": "farmersdelight:ratatouille",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:ratatouille":0},
+    "advancement": "plus:recipes/cooking_pot/ratatouille",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Ratatouille",
+            "ing0": "tag:fabric:crops/tomato",
+            "ing1": "tag:fabric:crops/onion",
+            "ing2": "minecraft:beetroot",
+            "ing3": "tag:fabric:vegetables",
+            "result": "farmersdelight:ratatouille",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

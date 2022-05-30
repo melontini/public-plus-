@@ -1,0 +1,18 @@
+{
+    "name": "Fish Stew",
+    "icon": "farmersdelight:fish_stew",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:fish_stew":0},
+    "advancement": "plus:recipes/cooking_pot/fish_stew",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Fish Stew",
+            "ing0": "tag:fabric:raw_fishes",
+            "ing1": "farmersdelight:tomato_sauce",
+            "ing2": "tag:fabric:crops/onion",
+            "result": "farmersdelight:fish_stew",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Cabbage Rolls",
+    "icon": "farmersdelight:cabbage_rolls",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:cabbage_rolls":0},
+    "advancement": "plus:recipes/cooking_pot/cabbage_rolls",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Cabbage Rolls",
+            "ing0": "farmersdelight:cabbage,farmersdelight:cabbage_leaf",
+            "ing1": "tag:fabric:raw_mutton,minecraft:carrot,minecraft:potato,minecraft:beetroot,tag:fabric:raw_fishes,tag:fabric:mushrooms,tag:fabric:raw_pork,tag:fabric:eggs,tag:fabric:raw_chicken,tag:fabric:raw_beef",
+            "result": "farmersdelight:cabbage_rolls",
+            "container": "farmersdelight:cabbage_rolls"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "purple_dye",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "biomemakeover:foxglove"
+    }
+  },
+  "result": {
+    "item": "minecraft:purple_dye",
+    "count": 2
+  }
+}

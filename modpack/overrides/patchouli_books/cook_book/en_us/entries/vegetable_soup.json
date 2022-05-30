@@ -1,0 +1,19 @@
+{
+    "name": "Vegetable Soup",
+    "icon": "farmersdelight:vegetable_soup",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:vegetable_soup":0},
+    "advancement": "plus:recipes/cooking_pot/vegetable_soup",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Vegetable Soup",
+            "ing0": "minecraft:carrot",
+            "ing1": "minecraft:potato",
+            "ing2": "minecraft:beetroot",
+            "ing3": "tag:fabric:salad_ingredients",
+            "result": "farmersdelight:vegetable_soup",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

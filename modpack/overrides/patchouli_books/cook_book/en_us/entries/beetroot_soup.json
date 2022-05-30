@@ -1,0 +1,18 @@
+{
+    "name": "Beetroot Soup",
+    "icon": "minecraft:beetroot_soup",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"minecraft:beetroot_soup":0},
+    "advancement": "plus:recipes/cooking_pot/beetroot_soup",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Beetroot Soup",
+            "ing0": "minecraft:beetroot",
+            "ing1": "minecraft:beetroot",
+            "ing2": "minecraft:beetroot",
+            "result": "minecraft:beetroot_soup",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

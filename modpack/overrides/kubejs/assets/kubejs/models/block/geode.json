@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "kubejs:block/geode",
+		"particle": "kubejs:block/geode"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 4],
+			"to": [12, 11, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 5.5], "texture": "#0"},
+				"east": {"uv": [4, 0, 8, 5.5], "texture": "#0"},
+				"south": {"uv": [0, 5.5, 4, 11], "texture": "#0"},
+				"west": {"uv": [4, 5.5, 8, 11], "texture": "#0"},
+				"up": {"uv": [12, 4, 8, 0], "texture": "#0"},
+				"down": {"uv": [12, 4, 8, 8], "texture": "#0"}
+			}
+		}
+	],
+	"display": {}
+}

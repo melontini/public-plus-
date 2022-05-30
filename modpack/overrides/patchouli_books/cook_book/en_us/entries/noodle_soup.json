@@ -1,0 +1,19 @@
+{
+    "name": "Noodle Soup",
+    "icon": "farmersdelight:noodle_soup",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:noodle_soup":0},
+    "advancement": "plus:recipes/cooking_pot/noodle_soup",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Noodle Soup",
+            "ing0": "tag:fabric:pasta",
+            "ing1": "tag:fabric:cooked_eggs",
+            "ing2": "minecraft:dried_kelp",
+            "ing3": "tag:fabric:raw_pork",
+            "result": "farmersdelight:noodle_soup",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Hot Cocoa",
+    "icon": "farmersdelight:hot_cocoa",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:hot_cocoa":0},
+    "advancement": "plus:recipes/cooking_pot/hot_cocoa",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Hot Cocoa",
+            "ing0": "tag:fabric:milk",
+            "ing1": "minecraft:sugar",
+            "ing2": "minecraft:cocoa_beans",
+            "ing3": "minecraft:cocoa_beans",
+            "result": "farmersdelight:hot_cocoa",
+            "container": "minecraft:glass_bottle"
+        }
+    ]
+}

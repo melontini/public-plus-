@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gray_dye",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "biomemakeover:gray_petals"
+    }
+  },
+  "result": {
+    "item": "minecraft:gray_dye",
+    "count": 1
+  }
+}

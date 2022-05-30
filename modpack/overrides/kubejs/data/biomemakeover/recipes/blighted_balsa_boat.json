@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "biomemakeover:blighted_balsa_planks"
+    }
+  },
+  "result": {
+    "item": "biomemakeover:blighted_balsa_boat",
+    "count": 1
+  }
+}

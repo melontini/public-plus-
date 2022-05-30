@@ -1,0 +1,18 @@
+{
+    "name": "Beef Stew",
+    "icon": "farmersdelight:beef_stew",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:beef_stew":0},
+    "advancement": "plus:recipes/cooking_pot/beef_stew",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Beef Stew",
+            "ing0": "minecraft:beef,farmersdelight:minced_beef",
+            "ing1": "minecraft:carrot",
+            "ing2": "minecraft:potato",
+            "result": "farmersdelight:beef_stew",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

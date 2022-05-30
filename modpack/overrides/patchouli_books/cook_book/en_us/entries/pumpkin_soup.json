@@ -1,0 +1,19 @@
+{
+    "name": "Pumpkin Soup",
+    "icon": "farmersdelight:pumpkin_soup",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"farmersdelight:pumpkin_soup":0},
+    "advancement": "plus:recipes/cooking_pot/pumpkin_soup",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Pumpkin Soup",
+            "ing0": "farmersdelight:pumpkin_slice",
+            "ing1": "tag:fabric:salad_ingredients",
+            "ing2": "tag:fabric:raw_pork",
+            "ing3": "tag:fabric:milk",
+            "result": "farmersdelight:pumpkin_soup",
+            "container": "minecraft:bowl"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Aquatic Astral Stew",
+    "icon": "gofish:aquatic_astral_stew",
+    "category": "patchouli:list",
+    "extra_recipe_mappings": {"gofish:aquatic_astral_stew":0},
+    "advancement": "plus:recipes/cooking_pot/aa_stew",
+    "pages": [
+        {
+            "type": "cooking_pot",
+            "meal_name": "Aquatic Astral Stew",
+            "ing0": "gofish:lunarfish",
+            "ing1": "gofish:galaxy_starfish",
+            "ing2": "gofish:starry_salmon",
+            "ing3": "gofish:nebula_swordfish",
+            "result": "gofish:aquatic_astral_stew",
+            "container": "minecraft:bowl",
+            "desc": "This meal is out of this world!"
+        }
+    ]
+}
