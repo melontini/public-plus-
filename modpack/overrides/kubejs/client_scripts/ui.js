@@ -3,21 +3,27 @@ onEvent('ui.main_menu', event => {
         //ui.background('kubejsui:textures/example_background.png')
         //day-night change? anyone?
         let result;
+        //queries current date
         const date = new Date();
+        //gets current hour
         let a = date.getHours();
-        
+        //check if it's night
         if (a => 0, a <= 5) {
             result = 'night';
         }
+        //checks if it's morning
         else if (a > 5, a <= 12) {
             result = 'morning';
         }
+        //checks if it's day
         else if (a > 12, a < 18) {
             result = 'day';
         }
         else if (a >= 18, a <= 21) {
             result = 'eve';
         }
+        //check if it's night again, since there're 24 hours in a day
+        //I wonder if this work if you use AM/PM format
         else if (a > 21, a <= 23) {
             result = 'night';
         }
