@@ -1,4 +1,12 @@
 onEvent('server.datapack.high_priority', function (event) {
+    event.addJson("biomemakeover:tags/items/glowshrooms.json", {
+        "replace": false,
+        "values": [
+            "biomemakeover:purple_glowshroom",
+            "biomemakeover:orange_glowshroom",
+            "biomemakeover:green_glowshroom"
+        ]
+    })
     event.addJson("minecraft:tags/entity_types/hostile.json", {
         "replace": false,
         "values": [

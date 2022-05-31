@@ -82,8 +82,7 @@ onEvent('recipes', event => {
           "tag": "minecraft:wooden_slabs"
         }
       })
-    //legacy bullshit
-    //PS who would ever want to build with that?????
+    //legacy stuffs
     event.remove({output: "blockus:legacy_first_grass_block"})
     event.remove({output: "blockus:legacy_grass_block"})
     event.remove({output: "blockus:legacy_leaves"})

@@ -1,18 +1,33 @@
 onEvent('server.datapack.high_priority', function (event) {
     let advancementTemplate = (inputItem, recipeItem) => {
+        var condition = {};
+        if (inputItem.startsWith('#')) {
+            var sterileInputItem = inputItem.replace('#', '')
+            condition = {
+                items: [
+                    {
+                        tag: sterileInputItem
+                    }
+                ]
+            }
+        } else if (inputItem == null || inputItem == 'minecraft:air') {
+            console.error('variable inputItem can\'t be null or equal air. You probably mistyped something. Currently inputItem is' + inputItem)
+        } else {
+            condition = {
+                items: [
+                    {
+                        item: inputItem
+                    }
+                ]
+            }
+        }
         var recipeID = recipeItem.replace(":", "_")
-        event.addJson("blockus:advancements/recipes/" + recipeID + ".json", {
+        event.addJson("cinderscapes:advancements/recipes/" + recipeID + ".json", {
             parent: "minecraft:recipes/root",
             criteria: {
                 has_item: {
                     trigger: "minecraft:inventory_changed",
-                    conditions: {
-                        items: [
-                            {
-                                item: inputItem
-                            }
-                        ]
-                    }
+                    conditions: condition
                 },
                 has_the_recipe: {
                     trigger: "minecraft:recipe_unlocked",
@@ -48,38 +63,7 @@ onEvent('server.datapack.high_priority', function (event) {
     })
     var wood = ['scorched', 'umbral']
     wood.forEach((wood) => {
-        event.addJson("cinderscapes:advancements/recipes/" + wood + "_planks.json", {
-            parent: "minecraft:recipes/root",
-            criteria: {
-                has_item: {
-                    trigger: "minecraft:inventory_changed",
-                    conditions: {
-                        items: [
-                            {
-                                tag: "cinderscapes:" + wood + "_stems"
-                            }
-                        ]
-                    }
-                },
-                has_the_recipe: {
-                    trigger: "minecraft:recipe_unlocked",
-                    conditions: {
-                        recipe: "cinderscapes:" + wood + "_planks"
-                    }
-                }
-            },
-            requirements: [
-                [
-                    "has_item",
-                    "has_the_recipe"
-                ]
-            ],
-            rewards: {
-                recipes: [
-                    "cinderscapes:" + wood + "_planks"
-                ]
-            }
-        })
+        advancementTemplate('#cinderscapes:' + wood + '_stems', 'cinderscapes:' + wood + '_planks')
 
         advancementTemplate('cinderscapes:' + wood + '_planks', 'cinderscapes:' + wood + '_stairs')
         advancementTemplate('cinderscapes:' + wood + '_planks', 'cinderscapes:' + wood + '_slab')
