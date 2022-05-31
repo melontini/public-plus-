@@ -25,7 +25,7 @@ onEvent('server.datapack.high_priority', function (event) {
             console.error('variable recipeItem can\'t be null or equal air. You probably mistyped something. Currently recipeItem is' + recipeItem)
         }
         var recipeID = recipeItem.replace(":", "_")
-        event.addJson("harvest_scythes:advancements/recipes/" + recipeID + ".json", {
+        event.addJson("biomemakeover:advancements/recipes/" + recipeID + ".json", {
             parent: "minecraft:recipes/root",
             criteria: {
                 has_item: {

@@ -153,7 +153,7 @@ onEvent('server.datapack.high_priority', function (event) {
                 "conditions": {
                     "items": [
                         {
-                            "item": "fabric:crops/cabbage"
+                            "tag": "fabric:crops/cabbage"
                         }
                     ]
                 }
@@ -451,7 +451,7 @@ onEvent('server.datapack.high_priority', function (event) {
         ]
     }
     )
-    event.addJson("plus:advancements/recipes/cooking_pot/pasta_with_meatballs.json", {
+    event.addJson("plus:advancements/recipes/cooking_pot/pasta_with_mutton_chop.json", {
         "parent": "minecraft:recipes/root",
         "criteria": {
             "got_fish_0": {
