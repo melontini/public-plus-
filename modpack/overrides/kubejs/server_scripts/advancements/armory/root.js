@@ -13,8 +13,8 @@ onEvent('server.datapack.high_priority', function (event) {
             },
             "background": "biomemakeover:textures/block/cladded_stone.png",
             "frame": "task",
-            "show_toast": true,
-            "announce_to_chat": true,
+            "show_toast": false,
+            "announce_to_chat": false,
             "hidden": false
         },
         "criteria": {
