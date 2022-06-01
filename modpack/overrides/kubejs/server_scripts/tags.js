@@ -266,3 +266,15 @@ onEvent('server.datapack.high_priority', function (event) {
         ]
     })
 })
+
+onEvent('tags.blocks', event => {
+    color.forEach((colorI) => {
+        event.add('biomemakeover:tapestries', 'biomemakeover:' + colorI + '_tapestry')
+        event.add('biomemakeover:tapestries', 'biomemakeover:' + colorI + '_wall_tapestry')
+    })
+    var buildingBlockPlanks = ["ancient_oak", "swamp_cypress", "willow", "blighted_balsa"]
+    buildingBlockPlanks.forEach((colorI) => {
+        event.add('minecraft:signs', 'biomemakeover:' + colorI + '_sign')
+        event.add('minecraft:signs', 'biomemakeover:' + colorI + '_wall_sign')
+    })
+})

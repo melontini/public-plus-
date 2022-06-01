@@ -1,0 +1,120 @@
+{
+  "schema_version": 2,
+  "entries": [
+    {
+      "blocks": [
+        "minecraft:lily_pad",
+
+        "biomemakeover:small_lily_pad",
+        "biomemakeover:water_lily"
+      ],
+      "tags": [
+        "minecraft:flowers",
+        "minecraft:saplings"
+      ],
+      "power_req": 1.0,
+      "power_red": 1.0
+    },
+    {
+      "blocks": [
+        "minecraft:cocoa",
+        "minecraft:melon_stem",
+        "minecraft:attached_melon_stem",
+        "minecraft:pumpkin_stem",
+        "minecraft:attached_pumpkin_stem",
+        "minecraft:sea_pickle",
+        "minecraft:turtle_egg",
+        "minecraft:torch",
+        "minecraft:wall_torch",
+        "minecraft:redstone_torch",
+        "minecraft:redstone_wall_torch",
+        "minecraft:soul_torch",
+        "minecraft:soul_wall_torch"
+      ],
+      "tags": [
+        "candlebackport:candles"
+      ],
+      "power_req": 1.5,
+      "power_red": 1.5
+    },
+    {
+      "blocks": [
+        "minecraft:glass_pane",
+        "minecraft:black_stained_glass_pane",
+        "minecraft:blue_stained_glass_pane",
+        "minecraft:brown_stained_glass_pane",
+        "minecraft:cyan_stained_glass_pane",
+        "minecraft:gray_stained_glass_pane",
+        "minecraft:green_stained_glass_pane",
+        "minecraft:light_blue_stained_glass_pane",
+        "minecraft:light_gray_stained_glass_pane",
+        "minecraft:lime_stained_glass_pane",
+        "minecraft:magenta_stained_glass_pane",
+        "minecraft:orange_stained_glass_pane",
+        "minecraft:pink_stained_glass_pane",
+        "minecraft:purple_stained_glass_pane",
+        "minecraft:red_stained_glass_pane",
+        "minecraft:white_stained_glass_pane",
+        "minecraft:yellow_stained_glass_pane",
+
+        "farmersdelight:rope",
+
+        "blockus:paper_lamp",
+
+        "minecraft:bamboo",
+        "minecraft:end_rod",
+        "minecraft:lantern",
+        "minecraft:soul_lantern",
+        "minecraft:tripwire_hook"
+      ],
+      "tags": "minecraft:flower_pots",
+      "power_req": 2.0,
+      "power_red": 2.0
+    },
+    {
+      "blocks": [
+        "minecraft:glass",
+        "minecraft:black_stained_glass",
+        "minecraft:blue_stained_glass",
+        "minecraft:brown_stained_glass",
+        "minecraft:cyan_stained_glass",
+        "minecraft:gray_stained_glass",
+        "minecraft:green_stained_glass",
+        "minecraft:light_blue_stained_glass",
+        "minecraft:light_gray_stained_glass",
+        "minecraft:lime_stained_glass",
+        "minecraft:magenta_stained_glass",
+        "minecraft:orange_stained_glass",
+        "minecraft:pink_stained_glass",
+        "minecraft:purple_stained_glass",
+        "minecraft:red_stained_glass",
+        "minecraft:white_stained_glass",
+        "minecraft:yellow_stained_glass",
+
+        "minecraft:melon",
+        "minecraft:pumpkin",
+        "minecraft:carved_pumpkin",
+        "minecraft:ice",
+        "minecraft:frosted_ice",
+        "minecraft:glowstone"
+      ],
+      "tags": [
+        "minecraft:banners",
+        "biomemakeover:tapestries",
+        "minecraft:signs"
+      ],
+      "power_req": 3.15,
+      "power_red": 3.15
+    },
+    {
+      "blocks": "minecraft:packed_ice",
+      "power_req": 4.0,
+      "power_red": 4.0
+    },
+    {
+      "blocks": "minecraft:blue_ice",
+      "power_req": 5.0,
+      "power_red": 5.0
+    }
+  ]
+}
