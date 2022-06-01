@@ -1,4 +1,10 @@
 {
+    "plus.title.credit.shaders": "Complementary Shaders by EminGTR",
+    "plus.title.copyright": "Copyright Mojang AB. Do not distribute!",
+
+    "plus.blocks.geode.tooltip": "Hmm... Something heavy should crack it...",
+    "plus.blocks.cracked_geode.tooltip": "Almost there... Maybe one more time...",
+
     "plus.advancements.story.root.title": "Welcome to Plus-!",
     "plus.advancements.story.root.desc": "New adventures await!",
     "plus.advancements.story.crafting_table.title": "Time to Get Crafty!",

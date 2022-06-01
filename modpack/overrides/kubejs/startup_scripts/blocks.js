@@ -12,7 +12,7 @@ onEvent('block.registry', event => {
         .box(4, 0, 4, 12, 11, 12, true)
         .item(itemBuilder => {
             itemBuilder.maxStackSize(16)
-            itemBuilder.tooltip('Hmm... Something heavy should crack it...')
+            itemBuilder.tooltip([Text.translate('plus.blocks.geode.tooltip')])
             itemBuilder.texture('kubejs:item/geode.png')
             itemBuilder.group('decorations')
         })
@@ -30,7 +30,7 @@ onEvent('block.registry', event => {
         .box(4, 0, 4, 12, 11, 12, true)
         .item(itemBuilder => {
             itemBuilder.maxStackSize(16)
-            itemBuilder.tooltip('Almost there... Maybe one more time...')
+            itemBuilder.tooltip([Text.translate('plus.blocks.cracked_geode.tooltip')])
             itemBuilder.texture('kubejs:item/cracked_geode.png')
             itemBuilder.group('decorations')
         })
