@@ -7,6 +7,7 @@ on:
 
 env:
   PROJECT_ID: "629093"
+  VERSION: "1.16.5"
 
 jobs:
   modpack-info:
@@ -128,5 +129,5 @@ jobs:
           file_path: ${{ needs.modpack-info.outputs.projectname }}-${{ needs.modpack-info.outputs.tag }}.zip
           changelog: "${{ needs.changelog.outputs.changelog }}"
           changelog_type: markdown
-          game_versions: "Minecraft ${{ needs.modpack-info.outputs.version }}" 
+          game_versions: "Minecraft ${{ env.VERSION }}" 
           release_type: ${{ steps.release-type.outputs.type }}
