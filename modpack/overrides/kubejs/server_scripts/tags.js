@@ -135,7 +135,24 @@ onEvent('server.datapack.high_priority', function (event) {
             "farmersdelight:cabbage_seeds",
             "farmersdelight:onion",
             "farmersdelight:rice",
-            "farmersdelight:tomato_seeds"
+            "farmersdelight:tomato_seeds",
+            "biomemakeover:rootling_seeds"
+        ]
+    })
+    event.addJson("tinytweaks:tags/items/plantable.json", {
+        "replace": false,
+        "values": [
+            "minecraft:beetroot_seeds",
+            "minecraft:carrot",
+            "minecraft:potato",
+            "minecraft:wheat_seeds",
+            "minecraft:melon_seeds",
+            "minecraft:pumpkin_seeds",
+            "farmersdelight:cabbage_seeds",
+            "farmersdelight:onion",
+            "farmersdelight:rice",
+            "farmersdelight:tomato_seeds",
+            "biomemakeover:rootling_seeds"
         ]
     })
     event.addJson("minecraft:tags/items/tall_flowers.json", {
