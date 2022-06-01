@@ -113,14 +113,14 @@ onEvent('ui.main_menu', event => {
         })
         //mojang copyright 
         ui.label(l => {
-            l.name = 'Copyright Mojang AB. Do not distribute!'
+            l.name = [Text.translate('plus.title.copyright')]
             l.x = 5
             l.y = ui.height - 12
             //help wanted
             //l.screen = 'screen.credits'
         })
         ui.label(l => {
-            l.name = 'Complementary Shaders by EminGTR'
+            l.name = [Text.translate('plus.title.credit.shaders')]
             l.x = 5
             l.y = ui.height - 22
             l.action = 'https://www.curseforge.com/minecraft/customization/complementary-shaders'
