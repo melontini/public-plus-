@@ -24,6 +24,17 @@
       }
     },
     {
+      "projectID": 297038,
+      "fileID": 3475680,
+      "required": true,
+      "__meta": {
+        "name": "CraftPresence",
+        "dependencies": [
+          306612
+        ]
+      }
+    },
+    {
       "projectID": 306612,
       "fileID": 3516413,
       "required": true,
