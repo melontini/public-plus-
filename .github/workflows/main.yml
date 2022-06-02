@@ -6,7 +6,7 @@ on:
       - 'v*'
 
 env:
-  PROJECT_ID: "629093"
+  PROJECT_ID: "123456"
   VERSION: "1.16.5"
 
 jobs:
