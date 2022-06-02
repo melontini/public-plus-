@@ -232,4 +232,43 @@ onEvent('server.datapack.high_priority', function (event) {
         }
     }
     )
+    event.addJson("plus:advancements/master_chef/use_axe_on_board.json", {
+        "display": {
+            "icon": {
+                "item": "minecraft:iron_axe"
+            },
+            "title": {
+                "translate": "plus.advancements.master_chef.use_axe_on_board.title"
+            },
+            "description": {
+                "translate": "plus.advancements.master_chef.use_axe_on_board.desc"
+            },
+            "frame": "task",
+            "show_toast": true,
+            "announce_to_chat": true,
+            "hidden": false
+        },
+        "parent": "farmersdelight:main/use_cutting_board",
+        "criteria": {
+            "requirement": {
+                "trigger": "farmersdelight:use_cutting_board",
+                "conditions": {
+                    "player": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "tag": "fabric:tools/axes"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+    )
 })
