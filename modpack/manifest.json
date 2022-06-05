@@ -425,30 +425,6 @@
       }
     },
     {
-      "projectID": 398780,
-      "fileID": 3373514,
-      "required": true,
-      "__meta": {
-        "name": "Library of Exile",
-        "explicit": false,
-        "dependencies": [
-          306612
-        ]
-      }
-    },
-    {
-      "projectID": 398782,
-      "fileID": 3376667,
-      "required": true,
-      "__meta": {
-        "name": "Anti Mob Farm",
-        "dependencies": [
-          398780,
-          306612
-        ]
-      }
-    },
-    {
       "projectID": 399798,
       "fileID": 3573933,
       "required": true,
