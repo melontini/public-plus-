@@ -1,15 +1,19 @@
-var dragon
+global.crystals = [];
 onEvent('entity.spawned', event => {
     let world = event.getWorld()
     let entity = event.getEntity()
+    let data = 'dragon.json'
+    let dataRead = JsonIO.read(data)
+    let crystalData = 'crystals.json'
+    let CrystalRead = JsonIO.read(crystalData)
     if (entity.getType() == 'minecraft:ender_dragon') {
-        dragon = true
         if (entity.isAlive()) {
-            //TODO add some server load checks
-            //pain
-            event.server.scheduleInTicks(1, event.server, (callback) => {
-                callback.data.tell(Text.red('Hi! Little dev message. Under any circumstances DO NOT RESTART the server or DO NOT RELOAD your world. The script managing the dragon runs on pure enthusiasm, so it will break if you restart the game or server.'))
-            })
+            let dragonIDprepare = {
+                "dragonAlive": true
+            }
+            JsonIO.write(data, dragonIDprepare)
+
+            //I'm not smart
             event.server.scheduleInTicks(20, event.server, function (callback) {
                 if (entity.isAlive()) {
                     var players = event.server.getPlayers()
@@ -27,30 +31,41 @@ onEvent('entity.spawned', event => {
                     callback.reschedule()
                 }
             })
+            event.server.scheduleInTicks(5, event.server, function (callback) {
+                let dataNuke = {
+                    "dragonAlive": false
+                }
+                if (!entity.isAlive()) {
+                    JsonIO.write(data, dataNuke)
+                } else {
+                    callback.reschedule()
+                }
+            })
         }
-        event.server.scheduleInTicks(1, event.server, function (callback) {
-            if (!entity.isAlive()) {
-                dragon = false
-            } else {
-                callback.reschedule()
-            }
-        })
     }
+    /**
+     * 
+     * 
+     * 
+     * 
+     */
     if (entity.getType() == 'minecraft:end_crystal') {
-        //console.log(entity.getWorld().getDimension())
         if (entity.getWorld().getDimension() == 'minecraft:the_end') {
+            if (dataRead.dragonAlive != false) {
+                global.crystals.push([entity.getId(), entity.getX(), entity.getY(), entity.getZ()]);
+                console.log(global.crystals)
+            }
             event.server.scheduleInTicks(1, event.server, function (callback) {
                 var x = entity.getX()
                 var y = entity.getY()
                 var z = entity.getZ()
-                if (!event.getEntity().isAlive() && dragon != false) {
-                    event.server.scheduleInTicks(2400, event.server, function (callback) {
-                        if (!event.getEntity().isAlive() && dragon != false) {
-                            event.server.runCommandSilent(`/particle minecraft:end_rod ${x} ${y} ${z} 0.5 0.5 0.5 0.5 100 normal`)
-                            event.server.runCommandSilent(`/execute in minecraft:the_end run summon minecraft:lightning_bolt ${x} ${y} ${z}`)
-                            //console.log(dragon)
+                if (!event.getEntity().isAlive() && dataRead.dragonAlive == true) {
+                    event.server.scheduleInTicks(1800, event.server, function (callback) {
+                        if (!event.getEntity().isAlive() && dataRead.dragonAlive == true) {
+                            callback.server.runCommandSilent(`/execute in minecraft:the_end run summon minecraft:lightning_bolt ${x} ${y} ${z}`)
+
                             event.server.scheduleInTicks(20, event.server, function (callback) {
-                                event.server.runCommandSilent(`/execute in minecraft:the_end run summon minecraft:end_crystal ${x} ${y} ${z}`)
+                                callback.server.runCommandSilent(`/execute in minecraft:the_end run summon minecraft:end_crystal ${x} ${y} ${z}`)
                             })
                         }
                     })
@@ -60,4 +75,12 @@ onEvent('entity.spawned', event => {
             })
         }
     }
+})
+onEvent('world.unload', event => {
+    let data = 'dragon.json'
+    let dataRead = JsonIO.read(data)
+    let dataNuke = {
+        "dragonAlive": false
+    }
+    JsonIO.write(data, dataNuke)
 })
