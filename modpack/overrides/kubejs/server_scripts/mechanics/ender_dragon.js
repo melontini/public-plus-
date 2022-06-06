@@ -1,24 +1,15 @@
+global.isDragonAlive
 onEvent('entity.spawned', event => {
     let entity = event.getEntity()
-    let data = 'dragon.json'
-    let dataRead = JsonIO.read(data)
     if (entity.getType() == 'minecraft:ender_dragon') {
         if (entity.isAlive()) {
-            let dragonIDprepare = {
-                "dragonAlive": true
-            }
-            JsonIO.write(data, dragonIDprepare)
-
             //I'm not smart
             event.server.scheduleInTicks(1, event.server, function (callback) {
                 if (entity.isAlive()) {
-                    if (dataRead.dragonAlive != true) {
-                        JsonIO.write(data, dragonIDprepare)
-                    }
+                    global.isDragonAlive = true
+                    callback.reschedule()
                 } else if (!entity.isAlive()) {
-                    if (dataRead.dragonAlive != false) {
-                        JsonIO.write(data, dragonIDprepare)
-                    }
+                    global.isDragonAlive = false
                 }
             })
             event.server.scheduleInTicks(20, event.server, function (callback) {
@@ -52,10 +43,11 @@ onEvent('entity.spawned', event => {
                 var x = entity.getX()
                 var y = entity.getY()
                 var z = entity.getZ()
-                var time = Math.floor(Math.random() * 1200) + 2200
-                if (!event.getEntity().isAlive() && dataRead.dragonAlive != false) {
+                var time = Math.floor(Math.random() * 1000) + 2200
+                if (!event.getEntity().isAlive() && global.isDragonAlive == true) {
                     event.server.scheduleInTicks(time, event.server, function (callback) {
-                        if (!event.getEntity().isAlive() && dataRead.dragonAlive != false) {
+                        if (!event.getEntity().isAlive() && global.isDragonAlive == true) {
+                            callback.server.runCommandSilent(`/execute in minecraft:the_end run particle minecraft:end_rod ${x} ${y} ${z} 0.5 0.5 0.5 0.5 200 force`)
                             callback.server.runCommandSilent(`/execute in minecraft:the_end run summon minecraft:lightning_bolt ${x} ${y} ${z}`)
 
                             event.server.scheduleInTicks(25, event.server, function (callback) {
@@ -71,12 +63,7 @@ onEvent('entity.spawned', event => {
     }
 })
 onEvent('world.unload', event => {
-    let data = 'dragon.json'
-    let dataRead = JsonIO.read(data)
-    let dataNuke = {
-        "dragonAlive": false
-    }
     if (event.getWorld().getDimension() == 'minecraft:the_end') {
-        JsonIO.write(data, dataNuke)
+        global.isDragonAlive = false
     }
 })
