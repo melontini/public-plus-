@@ -1,11 +1,7 @@
-global.crystals = [];
 onEvent('entity.spawned', event => {
-    let world = event.getWorld()
     let entity = event.getEntity()
     let data = 'dragon.json'
     let dataRead = JsonIO.read(data)
-    let crystalData = 'crystals.json'
-    let CrystalRead = JsonIO.read(crystalData)
     if (entity.getType() == 'minecraft:ender_dragon') {
         if (entity.isAlive()) {
             let dragonIDprepare = {
@@ -14,6 +10,17 @@ onEvent('entity.spawned', event => {
             JsonIO.write(data, dragonIDprepare)
 
             //I'm not smart
+            event.server.scheduleInTicks(1, event.server, function (callback) {
+                if (entity.isAlive()) {
+                    if (dataRead.dragonAlive != true) {
+                        JsonIO.write(data, dragonIDprepare)
+                    }
+                } else if (!entity.isAlive()) {
+                    if (dataRead.dragonAlive != false) {
+                        JsonIO.write(data, dragonIDprepare)
+                    }
+                }
+            })
             event.server.scheduleInTicks(20, event.server, function (callback) {
                 if (entity.isAlive()) {
                     var players = event.server.getPlayers()
@@ -31,16 +38,6 @@ onEvent('entity.spawned', event => {
                     callback.reschedule()
                 }
             })
-            event.server.scheduleInTicks(5, event.server, function (callback) {
-                let dataNuke = {
-                    "dragonAlive": false
-                }
-                if (!entity.isAlive()) {
-                    JsonIO.write(data, dataNuke)
-                } else {
-                    callback.reschedule()
-                }
-            })
         }
     }
     /**
@@ -51,20 +48,17 @@ onEvent('entity.spawned', event => {
      */
     if (entity.getType() == 'minecraft:end_crystal') {
         if (entity.getWorld().getDimension() == 'minecraft:the_end') {
-            if (dataRead.dragonAlive != false) {
-                global.crystals.push([entity.getId(), entity.getX(), entity.getY(), entity.getZ()]);
-                //console.log(global.crystals)
-            }
             event.server.scheduleInTicks(1, event.server, function (callback) {
                 var x = entity.getX()
                 var y = entity.getY()
                 var z = entity.getZ()
-                if (!event.getEntity().isAlive() && dataRead.dragonAlive == true) {
-                    event.server.scheduleInTicks(1800, event.server, function (callback) {
-                        if (!event.getEntity().isAlive() && dataRead.dragonAlive == true) {
+                var time = Math.floor(Math.random() * 1200) + 2200
+                if (!event.getEntity().isAlive() && dataRead.dragonAlive != false) {
+                    event.server.scheduleInTicks(time, event.server, function (callback) {
+                        if (!event.getEntity().isAlive() && dataRead.dragonAlive != false) {
                             callback.server.runCommandSilent(`/execute in minecraft:the_end run summon minecraft:lightning_bolt ${x} ${y} ${z}`)
 
-                            event.server.scheduleInTicks(20, event.server, function (callback) {
+                            event.server.scheduleInTicks(25, event.server, function (callback) {
                                 callback.server.runCommandSilent(`/execute in minecraft:the_end run summon minecraft:end_crystal ${x} ${y} ${z}`)
                             })
                         }
@@ -82,5 +76,7 @@ onEvent('world.unload', event => {
     let dataNuke = {
         "dragonAlive": false
     }
-    JsonIO.write(data, dataNuke)
+    if (event.getWorld().getDimension() == 'minecraft:the_end') {
+        JsonIO.write(data, dataNuke)
+    }
 })
