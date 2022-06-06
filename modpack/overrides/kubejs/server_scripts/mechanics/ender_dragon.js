@@ -62,8 +62,3 @@ onEvent('entity.spawned', event => {
         }
     }
 })
-onEvent('world.unload', event => {
-    if (event.getWorld().getDimension() == 'minecraft:the_end') {
-        global.isDragonAlive = false
-    }
-})
