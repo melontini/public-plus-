@@ -53,7 +53,7 @@ onEvent('entity.spawned', event => {
         if (entity.getWorld().getDimension() == 'minecraft:the_end') {
             if (dataRead.dragonAlive != false) {
                 global.crystals.push([entity.getId(), entity.getX(), entity.getY(), entity.getZ()]);
-                console.log(global.crystals)
+                //console.log(global.crystals)
             }
             event.server.scheduleInTicks(1, event.server, function (callback) {
                 var x = entity.getX()
