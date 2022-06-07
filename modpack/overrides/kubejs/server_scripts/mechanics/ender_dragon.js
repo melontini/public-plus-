@@ -43,7 +43,7 @@ onEvent('entity.spawned', event => {
                 var x = entity.getX()
                 var y = entity.getY()
                 var z = entity.getZ()
-                var time = Math.floor(Math.random() * 1000) + 2200
+                var time = Math.floor(Math.random() * 1700) + 2400
                 if (!event.getEntity().isAlive() && global.isDragonAlive == true) {
                     event.server.scheduleInTicks(time, event.server, function (callback) {
                         if (!event.getEntity().isAlive() && global.isDragonAlive == true) {
