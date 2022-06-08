@@ -7,7 +7,7 @@ onEvent('ui.main_menu', event => {
         const date = new Date();
         //gets current hour
         let a = date.getHours();
-        //check if it's night
+        //checks if it's night
         if (a => 0, a <= 5) {
             result = 'night';
         }
@@ -22,11 +22,17 @@ onEvent('ui.main_menu', event => {
         else if (a >= 18, a <= 21) {
             result = 'eve';
         }
-        //check if it's night again, since there're 24 hours in a day
-        //I wonder if this work if you use AM/PM format
+        //checks if it's night again, since there're 24 hours in a day
+        //I wonder if this works if you use AM/PM format
         else if (a > 21, a <= 23) {
             result = 'night';
         }
+        ui.label(l => {
+            l.name = Text.yellow(global.currentspalsh)
+            l.x = 30
+            l.y = 85
+            l.shadow = true
+        })
         ui.panorama("kubejs:textures/gui/panoramas/sakura_forest/panorama_" + result);
         //top
         ui.image((i) => {
@@ -50,7 +56,7 @@ onEvent('ui.main_menu', event => {
             i.width = 130;
             i.height = 47;
             i.x = 41;
-            i.y = 34;
+            i.y = 30;
             i.texture = "kubejs:textures/gui/plus_minus_logo.png";
         });
         //x
