@@ -39,26 +39,28 @@ onEvent('entity.spawned', event => {
      */
     if (entity.getType() == 'minecraft:end_crystal') {
         if (entity.getWorld().getDimension() == 'minecraft:the_end') {
-            event.server.scheduleInTicks(1, event.server, function (callback) {
-                var x = entity.getX()
-                var y = entity.getY()
-                var z = entity.getZ()
-                var time = Math.floor(Math.random() * 1700) + 2400
-                if (!event.getEntity().isAlive() && global.isDragonAlive == true) {
-                    event.server.scheduleInTicks(time, event.server, function (callback) {
-                        if (!event.getEntity().isAlive() && global.isDragonAlive == true) {
-                            callback.server.runCommandSilent(`/execute in minecraft:the_end run particle minecraft:end_rod ${x} ${y} ${z} 0.5 0.5 0.5 0.5 200 force`)
-                            callback.server.runCommandSilent(`/execute in minecraft:the_end run summon minecraft:lightning_bolt ${x} ${y} ${z}`)
+            var x = entity.getX()
+            var y = entity.getY()
+            var z = entity.getZ()
+            if (y >= 74) {
+                event.server.scheduleInTicks(1, event.server, function (callback) {
+                    if (!event.getEntity().isAlive() && global.isDragonAlive == true) {
+                        var time = Math.floor(Math.random() * 1000) + 2200
+                        event.server.scheduleInTicks(time, event.server, function (callback) {
+                            if (!event.getEntity().isAlive() && global.isDragonAlive == true) {
+                                callback.server.runCommandSilent(`/execute in minecraft:the_end run particle minecraft:end_rod ${x} ${y} ${z} 0.5 0.5 0.5 0.5 200 force`)
+                                callback.server.runCommandSilent(`/execute in minecraft:the_end run summon minecraft:lightning_bolt ${x} ${y} ${z}`)
 
-                            event.server.scheduleInTicks(25, event.server, function (callback) {
-                                callback.server.runCommandSilent(`/execute in minecraft:the_end run summon minecraft:end_crystal ${x} ${y} ${z}`)
-                            })
-                        }
-                    })
-                } else {
-                    callback.reschedule()
-                }
-            })
+                                event.server.scheduleInTicks(25, event.server, function (callback) {
+                                    callback.server.runCommandSilent(`/execute in minecraft:the_end run summon minecraft:end_crystal ${x} ${y} ${z}`)
+                                })
+                            }
+                        })
+                    } else {
+                        callback.reschedule()
+                    }
+                })
+            }
         }
     }
 })
