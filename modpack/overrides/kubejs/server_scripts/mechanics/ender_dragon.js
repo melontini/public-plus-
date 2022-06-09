@@ -45,7 +45,7 @@ onEvent('entity.spawned', event => {
             if (y >= 74) {
                 event.server.scheduleInTicks(1, event.server, function (callback) {
                     if (!event.getEntity().isAlive() && global.isDragonAlive == true) {
-                        var time = Math.floor(Math.random() * 1000) + 2200
+                        var time = Math.floor(Math.random() * 1700) + 2400
                         event.server.scheduleInTicks(time, event.server, function (callback) {
                             if (!event.getEntity().isAlive() && global.isDragonAlive == true) {
                                 callback.server.runCommandSilent(`/execute in minecraft:the_end run particle minecraft:end_rod ${x} ${y} ${z} 0.5 0.5 0.5 0.5 200 force`)
