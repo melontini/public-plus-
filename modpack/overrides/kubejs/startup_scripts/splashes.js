@@ -42,7 +42,7 @@ possibleSplashes = [
     "Happy Gaming",
     "Plus-",
     "Don't trust slugs!",
-    "It's Plus-, not negative",
+    "It's Plus-, not Minus+",
     "Mindblowing",
     "日本ハロー！",
     "한국 안녕하세요!",
@@ -71,12 +71,11 @@ possibleSplashes = [
     "Also try RAID VPN!",
     "Chosen on Startup!",
     "Free 100$ NightFort Card!",
-    "Night in the Woods",
     "Hard to Find!",
     "Ungoogleable!",
     "This spash is not available for 3rd party users",
     "What?",
-    ".isHavingFun()",
+    ".isHavingFun(\"?\")",
     ".getPaid().getLaid().gatorade",
     "Log4J",
     "J4J",
@@ -85,7 +84,9 @@ possibleSplashes = [
     "The System Has Been Destroyed",
     "Press Power Button to Shutdown",
     "Not Enough Items!",
-    "Need Another Bottle?"
+    "Need Another Bottle?",
+    "Stand With Pride",
+    "Be Proud"
 ]
 if ((date.getDate() + '-' + date.getMonth()) == '30-4') {
     possibleSplashes = ["Happy Birthday, Plus-!"]
