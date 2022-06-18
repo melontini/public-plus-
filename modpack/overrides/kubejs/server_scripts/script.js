@@ -8,7 +8,7 @@ settings.logErroringRecipes = true
 onEvent('recipes', event => {
 	// Change recipes here
 })
-
+//onEvent('recipes.compostables', event => { event.add('minecraft:rotten_flesh', 1.0) })
 onEvent('item.tags', event => {
 	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
 	// event.get('forge:cobblestone').add('minecraft:diamond_ore')

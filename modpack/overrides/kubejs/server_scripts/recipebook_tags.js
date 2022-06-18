@@ -226,8 +226,53 @@ onEvent('tags.items', event => {
         ['blockus', 'white_oak'],
         ['cinderscapes', 'umbral'],
         ['cinderscapes', 'scorched'],
-        ['terrestria', 'rainbow_eucalyptus']
+        ['terrestria', 'rainbow_eucalyptus'],
+        ['minecraft', 'oak'],
+        ['minecraft', 'spruce'],
+        ['minecraft', 'birch'],
+        ['minecraft', 'jungle'],
+        ['minecraft', 'acacia'],
+        ['minecraft', 'dark_oak'],
+        ['minecraft', 'crimson'],
+        ['minecraft', 'warped'],
     ]
+    var wooden_things = ["slab", "wood", "fence", "fence_gate", "stairs", "planks"]
+    //lol
+    console.setMuted(true)
+    for (let [namespace, log] of logs) {
+        wooden_things.forEach(model => {
+            if (log == 'umbral' && model == 'wood') {
+                event.add(namespace + ':' + log, namespace + ':' + log + '_hyphae')
+            }
+            if (log == 'scorched' && model == 'wood') {
+                event.add(namespace + ':' + log, namespace + ':' + log + '_hyphae')
+            }
+            if (log == 'warped' && model == 'wood') {
+                event.add(namespace + ':' + log, namespace + ':' + log + '_hyphae')
+            }
+            if (log == 'crimson' && model == 'wood') {
+                event.add(namespace + ':' + log, namespace + ':' + log + '_hyphae')
+            }
+            event.add(namespace + ':' + log, namespace + ':' + log + '_' + model)
+        })
+        //
+        //
+        //
+        if (log == 'warped') {
+            event.add(namespace + ':' + log, namespace + ':stripped_' + log + '_hyphae')
+        }
+        if (log == 'crimson') {
+            event.add(namespace + ':' + log, namespace + ':stripped_' + log + '_hyphae')
+        }
+        if (log == 'umbral') {
+            event.add(namespace + ':' + log, namespace + ':stripped_' + log + '_hyphae')
+        }
+        if (log == 'scorched') {
+            event.add(namespace + ':' + log, namespace + ':stripped_' + log + '_hyphae')
+        }
+        event.add(namespace + ':' + log, namespace + ':stripped_' + log + '_wood')
+    }
+    console.setMuted(false)
     for (let [namespace, log] of logs) {
         event.add('tagged-recipe-book:crafting/redstone', namespace + ':' + log + '_fence_gate')
     }
