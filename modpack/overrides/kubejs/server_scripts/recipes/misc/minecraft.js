@@ -45,6 +45,13 @@ onEvent('recipes', event => {
     event.forEachRecipe({ output: "#minecraft:buttons" }, r => {
         r.setGroup("buttons")
     })
+    event.forEachRecipe({ output: "minecraft:lead" }, r => {
+        r.setGroup('lead')
+    })
+    //organic compost
+    event.forEachRecipe({ output: "farmersdelight:organic_compost" }, r => {
+        r.setGroup('organic_compost')
+    })
     //boats
     event.forEachRecipe({ output: "#minecraft:boats" }, r => {
         r.setGroup("boats")
