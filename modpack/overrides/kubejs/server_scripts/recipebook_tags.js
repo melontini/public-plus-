@@ -236,7 +236,7 @@ onEvent('tags.items', event => {
         ['minecraft', 'crimson'],
         ['minecraft', 'warped'],
     ]
-    var wooden_things = ["slab", "wood", "fence", "fence_gate", "stairs", "planks", "sign"]
+    var wooden_things = ["slab", "wood", "fence", "stairs", "planks", "sign"]
     //lol
     console.setMuted(true)
     for (let [namespace, log] of logs) {
