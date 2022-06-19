@@ -817,30 +817,6 @@
       }
     },
     {
-      "projectID": 526606,
-      "fileID": 3704027,
-      "required": true,
-      "__meta": {
-        "name": "Collective (Fabric)",
-        "explicit": false,
-        "dependencies": [
-          306612
-        ]
-      }
-    },
-    {
-      "projectID": 530031,
-      "fileID": 3467074,
-      "required": true,
-      "__meta": {
-        "name": "Healing Campfire (Fabric)",
-        "dependencies": [
-          306612,
-          526606
-        ]
-      }
-    },
-    {
       "projectID": 622736,
       "fileID": 3825828,
       "required": true,
