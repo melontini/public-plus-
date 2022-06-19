@@ -27,12 +27,22 @@ onEvent('ui.main_menu', event => {
         else if (a > 21, a <= 23) {
             result = 'night';
         }
+        let pain
+        if (global.currentsplash.length() <= 26) {
+            pain = 10
+        } else {
+            //not the best solution, but I think it's fine
+            //KubeJS still converts floats to ints, so we can't get any more precise
+            pain = Math.floor(10 - (global.currentsplash.length() * 0.07))
+        }
         ui.label(l => {
-            l.name = Text.yellow(global.currentspalsh)
+            l.name = Text.yellow(global.currentsplash)
             l.x = 30
             l.y = 85
+            l.height = pain
             l.shadow = true
         })
+        
         ui.panorama("kubejs:textures/gui/panoramas/sakura_forest/panorama_" + result);
         //top
         ui.image((i) => {

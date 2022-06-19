@@ -4,7 +4,7 @@ possibleSplashes = [
     "Are you having fun yet?",
     "Also Try bliss",
     "Huh",
-    "This Splash is, probably, waaaaaay too long for it's own good",
+    "Yoo, I'm a pickle Morty!!!!",
     "CC-BY-4.0",
     "Just Monocle",
     "Post this on reddits to get...",
@@ -74,6 +74,8 @@ possibleSplashes = [
     "Hard to Find!",
     "Ungoogleable!",
     "This spash is not available for 3rd party users",
+    "111111111111111111111111111111",
+    "This Splash is, probably, waaaaaay too long for it's own good",
     "What?",
     ".isHavingFun(\"?\")",
     ".getPaid().getLaid().gatorade",
@@ -85,8 +87,10 @@ possibleSplashes = [
     "Press Power Button to Shutdown",
     "Not Enough Items!",
     "Need Another Bottle?",
-    "Stand With Pride",
-    "Be Proud"
+    "Stand With Pride!",
+    "Be Proud!",
+    "192.168.0.127",
+    "127.0.0.1"
 ]
 if ((date.getDate() + '-' + date.getMonth()) == '30-4') {
     possibleSplashes = ["Happy Birthday, Plus-!"]
@@ -100,4 +104,4 @@ if ((date.getDate() + '-' + date.getMonth()) == '15-5') {
     possibleSplashes.push("Among Us is " + (date.getFullYear() - 2018) + " years old")
 }
 const random = Math.floor(Math.random() * possibleSplashes.length);
-global.currentspalsh = possibleSplashes[random]
+global.currentsplash = possibleSplashes[random]
