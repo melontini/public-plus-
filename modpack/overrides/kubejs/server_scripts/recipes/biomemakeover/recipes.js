@@ -1,4 +1,11 @@
 onEvent('recipes', event => {
+    event.remove({id: 'biomemakeover:glowshroom_stem_brick_wall'})
+    event.shaped('6x biomemakeover:glowshroom_stem_brick_wall', [
+        'TTT',
+        'TTT'
+    ], {
+        T: 'biomemakeover:glowshroom_stem_brick'
+    }).group('glowshroom_stem_blocks').id("biomemakeover:glowshroom_stem_brick_wall")
     event.remove({output: 'biomemakeover:willow_planks'})
     event.remove({output: 'biomemakeover:willow_planks_stripped'})
     event.shapeless('4x biomemakeover:willow_planks', ['#biomemakeover:willow_logs']).id('biomemakeover:willow_planks').group('biomemakeover_willow')

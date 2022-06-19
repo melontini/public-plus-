@@ -850,7 +850,7 @@ onEvent('player.tick', event => {
         [5, 3, 4],
         [5, 3, 5],
     ]
-    
+
     let player = event.getPlayer()
     if (player.getTicksExisted() % 120 == 0) {
         if (player.getPotionEffects().getActive("regeneration") == null) {
