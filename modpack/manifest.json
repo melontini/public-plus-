@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "0.1.11",
+  "version": "0.1.12",
   "author": "melontini",
   "name": "Plus-",
   "files": [
@@ -841,7 +841,7 @@
     },
     {
       "projectID": 628779,
-      "fileID": 3820702,
+      "fileID": 3838401,
       "required": true,
       "__meta": {
         "name": "Plus- tweaker"
