@@ -1,0 +1,32 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "blockus:nether_stars_block"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "blockus:nether_star_from_nether_stars_block"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item",
+			"has_the_recipe"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"blockus:nether_star_from_nether_stars_block"
+		]
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "blockus:cyan_shingles"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "blockus:cyan_shingles_stairs_from_cyan_shingles_stonecutting"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item",
+			"has_the_recipe"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"blockus:cyan_shingles_stairs_from_cyan_shingles_stonecutting"
+		]
+	}
+}

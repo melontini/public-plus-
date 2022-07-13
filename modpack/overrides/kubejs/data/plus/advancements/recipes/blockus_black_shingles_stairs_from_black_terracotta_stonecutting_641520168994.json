@@ -1,0 +1,32 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:black_terracotta"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "blockus:black_shingles_stairs_from_black_terracotta_stonecutting"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item",
+			"has_the_recipe"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"blockus:black_shingles_stairs_from_black_terracotta_stonecutting"
+		]
+	}
+}

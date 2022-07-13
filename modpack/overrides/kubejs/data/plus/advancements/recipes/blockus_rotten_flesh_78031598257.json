@@ -1,0 +1,32 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "blockus:rotten_flesh_block"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "blockus:rotten_flesh"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item",
+			"has_the_recipe"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"blockus:rotten_flesh"
+		]
+	}
+}

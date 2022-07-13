@@ -1,0 +1,32 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_item": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "blockus:sweet_berries_crate"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "blockus:sweet_berries_from_sweet_berries_crate"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_item",
+			"has_the_recipe"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"blockus:sweet_berries_from_sweet_berries_crate"
+		]
+	}
+}
