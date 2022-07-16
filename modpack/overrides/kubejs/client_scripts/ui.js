@@ -118,15 +118,6 @@ onEvent('ui.main_menu', event => {
             b.y = 175;
             b.action = 'fabric:mod_list'
         })
-        //shilling
-        ui.imageButton((b) => {
-            b.texture = "kubejs:textures/gui/boosty_button_no_outline.png";
-            b.width = 20;
-            b.height = 20;
-            b.x = 178;
-            b.y = 175;
-            b.action = 'https://boosty.to/melontini/'
-        })
         //mojang copyright 
         ui.label(l => {
             l.name = [Text.translate('plus.title.copyright')]
