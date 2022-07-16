@@ -17,6 +17,23 @@ onEvent('recipes', event => {
     event.forEachRecipeAsync({ output: "#minecraft:trapdoors" }, r => {
         r.setGroup("trapdoors")
     })
+
+    //fence gate
+    event.forEachRecipeAsync({ output: "biomemakeover:ancient_oak_fence_gate" }, r => {
+        r.setGroup('wooden_fence_gate')
+    })
+    event.forEachRecipeAsync({ output: "biomemakeover:willow_fence_gate" }, r => {
+        r.setGroup('wooden_fence_gate')
+
+    })
+    event.forEachRecipeAsync({ output: "biomemakeover:blighted_balsa_fence_gate" }, r => {
+        r.setGroup('wooden_fence_gate')
+
+    })
+    event.forEachRecipeAsync({ output: "biomemakeover:swamp_cypress_fence_gate" }, r => {
+        r.setGroup('wooden_fence_gate')
+    })
+
     event.forEachRecipeAsync({ output: "#minecraft:pressure_plates" }, r => {
         r.setGroup("pressure_plates")
     })
@@ -620,10 +637,55 @@ onEvent('recipes', event => {
     event.forEachRecipeAsync({ output: "blockus:quartz_tiles_stairs" }, r => {
         r.setGroup("quartz")
     })
+
+    event.forEachRecipeAsync({ output: "farmersdelight:apple_pie" }, r => {
+        r.setGroup("apple_pie")
+    })
+    event.forEachRecipeAsync({ output: "farmersdelight:chocolate_pie" }, r => {
+        r.setGroup("chocolate_pie")
+    })
+    event.forEachRecipeAsync({ output: "farmersdelight:rice" }, r => {
+        r.setGroup("rice")
+    })
+    event.forEachRecipeAsync({ output: "farmersdelight:sweet_berry_cheesecake" }, r => {
+        r.setGroup("sweet_berry_cheesecake")
+    })
+    event.forEachRecipeAsync({ output: "minecraft:cake" }, r => {
+        r.setGroup("cake")
+    })
+    event.forEachRecipeAsync({ output: "farmersdelight:cabbage" }, r => {
+        r.setGroup("cabbage")
+    })
+    event.forEachRecipeAsync({ output: "farmersdelight:raw_pasta" }, r => {
+        r.setGroup("raw_pasta")
+    })
+    event.forEachRecipeAsync({ output: "minecraft:beetroot" }, r => {
+        r.setGroup("beetroot")
+    })
+    event.forEachRecipeAsync({ output: "minecraft:bread" }, r => {
+        r.setGroup("bread")
+    })
+    event.forEachRecipeAsync({ output: "minecraft:carrot" }, r => {
+        r.setGroup("carrot")
+    })
+    event.forEachRecipeAsync({ output: "minecraft:cookie" }, r => {
+        r.setGroup("cookie")
+    })
+    event.forEachRecipeAsync({ output: "minecraft:golden_carrot" }, r => {
+        r.setGroup("golden_carrot")
+    })
+    event.forEachRecipeAsync({ output: "minecraft:golden_apple" }, r => {
+        r.setGroup("golden_apple")
+    })
+    event.forEachRecipeAsync({ output: "minecraft:potato" }, r => {
+        r.setGroup("potato")
+    })
+
+
     //this will give me nightmares
-    var var1002 = ["smooth_", "chiseled_", "blighted_", "sturdy_", "warped_warty_", "crimson_warty_", "mossy_", "", "polished_", "rough_"]
+    var var1002 = ["smooth_", "chiseled_", "blighted_", "sturdy_", "warped_warty_", "crimson_warty_", "mossy_", "", "polished_", "rough_", "cracked_"]
     var stoneModel = ["block", "stairs", "slab", "", "bricks", "pillar", "brick", "wall"]
-    var stoneVariant = ["stone", "blackstone", "cobblestone", "basalt", "basalt_cobblestone"]
+    var stoneVariant = ["stone", "blackstone", "cobblestone", "basalt", "basalt_cobblestone", "dried_peat"]
     var stoneNamespace = ["biomemakeover", "blockus", "minecraft", "terrestria"]
     stoneNamespace.forEach(namespace => {
         stoneVariant.forEach(variant => {
