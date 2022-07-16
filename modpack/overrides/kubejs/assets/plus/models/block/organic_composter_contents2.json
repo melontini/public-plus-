@@ -1,0 +1,14 @@
+{
+    "textures": {
+        "particle": "farmersdelight:block/organic_compost_stage0",
+        "inside": "farmersdelight:block/organic_compost_stage0"
+    },
+    "elements": [
+        {   "from": [ 2, 0, 2 ],
+            "to": [ 14, 5, 14 ],
+            "faces": {
+                "up": { "texture": "#inside", "cullface": "up" }
+            }
+        }
+    ]
+}
